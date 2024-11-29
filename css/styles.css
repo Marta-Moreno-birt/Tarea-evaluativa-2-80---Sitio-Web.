@@ -1,0 +1,368 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f0f7ff; 
+    color: #333; 
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #0077b6;
+}
+
+/* Encabezado */
+header {
+    background-color: #0077b6; /* Azul principal */
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header .logo img {
+    width: 12rem; /* Ajuste de tamaño para el logo */
+    margin-bottom: 1rem;
+}
+
+/* Ajustes del menú de navegación */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #005f8a; /* Efecto hover en los enlaces */
+}
+
+/* Página de inicio - Bienvenida */
+.bienvenida {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4vh 2rem;
+}
+
+.contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.imagen-bienvenida {
+    flex: 1;
+    max-width: 40%;
+}
+
+.imagen-bienvenida img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.8rem;
+}
+
+.texto-bienvenida {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+}
+
+
+.texto-bienvenida p {
+    margin-bottom: 1.5rem;
+}
+
+.botones {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-noticias, .btn-productos {
+    background-color: #0077b6;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.btn-noticias:hover, .btn-productos:hover {
+    background-color: #005f8a;
+}
+
+/* Página de productos */
+.productos {
+    padding: 4vh 2rem;
+    text-align: center;
+}
+
+.productos ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+.productos ul li {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    width: 30%;
+    text-align: center;
+    flex-grow: 1;
+    min-width: 200px;
+}
+
+.productos ul li a {
+    text-decoration: none;
+    color: #0077b6;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.productos ul li a:hover {
+    color: #005f8a;
+}
+
+/* Estilos para las imágenes de los productos */
+.producto-imagen img {
+    width: 50%;
+    object-fit: cover; /* Hace que la imagen cubra el contenedor sin distorsionarse */
+    border-radius: 0.8rem; /* Bordes redondeados */
+}
+
+/* Estilo para los contenedores de las imágenes */
+.producto-imagen {
+    
+    overflow: hidden; /* Asegura que cualquier parte de la imagen que se desborde se oculte */
+    margin: 0 auto 1rem auto; /* Centra la imagen y agrega espacio debajo */
+}
+
+/* Página de detalle de producto */
+.producto-detalle {
+    padding: 4vh 2rem;
+    text-align: center;
+}
+
+.producto-detalle h1 {
+    font-size: 3.5rem;
+    color: #0077b6;
+    margin-bottom: 2rem;
+}
+
+.producto-detalle img {
+    width: 20rem;
+    height: auto;
+    border-radius: 0.8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.producto-detalle video {
+    width: 20rem;
+    margin-top: 2rem;
+    border-radius: 0.8rem;
+}
+
+/* Página de noticias */
+.noticias {
+    padding: 4vh 2rem;
+}
+
+.noticias ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.noticias ul li {
+    padding: 2rem;
+    border-radius: 0.8rem;
+    width: 30%;
+    text-align: center;
+    flex-grow: 1;
+    min-width: 200px;
+}
+
+.noticias ul li a {
+    text-decoration: none;
+    color: #0077b6;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.noticias ul li a:hover {
+    color: #005f8a;
+}
+
+/* Página de contacto */
+.contacto {
+    max-width: 800px;
+    margin: 5vh auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contacto h1 {
+    color: #0077b6;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contacto label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.contacto input, .contacto textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.contacto button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.contacto button:hover {
+    background-color: #005f8a;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #0077b6;
+    color: white;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .bienvenida {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contenido {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen-bienvenida {
+        max-width: 80%;
+    }
+
+    .texto-bienvenida {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .btn-noticias, .btn-productos {
+        width: 100%; /* Botones a tamaño completo en pantallas pequeñas */
+    }
+
+    .paquetes {
+        flex-direction: column;
+        gap: 3rem; /* Aumentamos el espacio entre los paquetes */
+    }
+
+    .paquete {
+        width: 80%; /* Los paquetes se muestran más grandes en pantallas pequeñas */
+    }
+
+    .productos ul {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .productos ul li {
+        width: 80%;
+    }
+
+    .producto-detalle h1 {
+        font-size: 2rem; /* Ajustamos el tamaño del título */
+    }
+
+    .contacto {
+        width: 90%; /* Ampliamos el formulario para pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .bienvenida {
+        padding: 2vh 1rem;
+    }
+
+    .imagen-bienvenida img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .texto-bienvenida h1 {
+        font-size: 2rem;
+    }
+
+    .texto-bienvenida p {
+        font-size: 1rem;
+    }
+
+    .producto-detalle h1 {
+        font-size: 1.5rem;
+    }
+
+    .paquete, .productos ul li {
+        width: 100%; /* En dispositivos muy pequeños, mostramos cada tarjeta a tamaño completo */
+    }
+}
